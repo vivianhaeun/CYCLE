@@ -1,0 +1,193 @@
+body{
+    margin:0;
+
+    font-family:"Space Mono", monospace;
+
+    background-image:url("bg.png");
+    background-size:cover;
+    background-position:center;
+}
+
+#introScreen,
+#briefingScreen,
+#gameScreen{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#briefingScreen,
+#gameScreen{
+    display:none;
+}
+
+.card,
+.game{
+
+    width:800px;
+
+    background:rgba(255, 171, 171, 0.95);
+
+    padding:2rem;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 0 20px rgba(0,0,0,.2);
+}
+
+h1{
+    font-family:"Pixelify Sans", sans-serif;
+    color:#a60000;
+    font-size:5rem;
+}
+
+p{
+    font-size:1.4rem;
+    line-height:1.5;
+    margin:1rem 0;
+}
+
+.tagline{
+    font-size:1.5rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    font-family: "Pixelify Sans", serif;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    background: rgba(255,255,255,0.5);
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+
+    min-width: 150px;
+    justify-content: center;
+    text-align: center;
+}
+
+.stat strong{
+    font-family: "Pixelify Sans", serif;
+    color:#af2727;
+    font-size:2rem;
+}
+
+#speaker{
+    font-size:2.5rem;
+    color:#000000;
+    font-family: "Pixelify Sans", serif;
+}
+
+#portrait{
+    display: block;
+    margin: 0 auto 10px auto;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+#storyBox {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    margin: 1rem 0;
+}
+
+#storyBox p {
+    margin: 0.5rem 0;
+}
+
+button{
+    width:100%;
+    padding:1rem;
+    margin-top:1rem;
+
+    border:none;
+    border-radius:12px;
+
+    background:#f07979;
+    color:white;
+
+    font-size:1rem;
+    cursor:pointer;
+
+    font-family:"Pixelify Sans";
+}
+
+button:hover{
+    opacity:.9;
+}
+
+.hidden {
+    display: none;
+}
+
+body.ending-balanced {
+    background-color: #fff7cc;
+}
+
+body.ending-balanced .game,
+body.ending-balanced .card {
+    background: rgba(255, 245, 180, 0.95);
+}
+
+body.ending-balanced h1,
+body.ending-balanced h2,
+body.ending-balanced .stat strong,
+body.ending-balanced button {
+    color: #b38f00;
+}
+
+body.ending-balanced button {
+    background: #f2c94c;
+}
+
+body.ending-good {
+    background-color: #e7fff0;
+}
+
+body.ending-good .game,
+body.ending-good .card {
+    background: rgba(210, 255, 220, 0.95);
+}
+
+body.ending-good h1,
+body.ending-good h2,
+body.ending-good .stat strong,
+body.ending-good button {
+    color: #145a32;
+}
+
+body.ending-good button {
+    background: #52b788;
+}
+
+body.ending-good {
+    background-image: url("newbg.avif");
+    background-size: cover;
+    background-position: center;
+}
+
+body.ending-balanced {
+    background-image: url("meh.png");
+    background-size: cover;
+    background-position: center;
+}
+
+body.ending-broken {
+    background-image: url("bg.png");
+    background-size: cover;
+    background-position: center;
+}

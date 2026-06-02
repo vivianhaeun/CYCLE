@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYCLE</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="introScreen">
+
+    <div class="card">
+
+        <h1>CYCLE</h1>
+
+        <p class="tagline">
+            Every choice shapes the cycle. <strong>Some are harder to break than others.</strong>
+        </p>
+
+        <button id="startBtn">Start Game</button>
+
+    </div>
+
+</div>
+
+<div id="briefingScreen">
+
+    <div class="card">
+
+        <h1>Welcome, Mayor.</h1>
+
+        <p>
+            For decades, your city has relied on the same solutions:
+            build more, consume more, profit more.
+        </p>
+
+        <p>
+            At first, it worked. The city thrived, grew to be wealthy and powerful.
+            But over time, the cost became <strong>harder to ignore.</strong>
+            Pollution crept into the air and rivers,
+            green spaces disappeared beneath concrete,
+            and the once vibrant community grew divided and discontent.
+        </p>
+
+        <p>
+            Now, you've been elected mayor.
+            The citizens are looking to you not just for leadership,
+            but for change.
+        </p>
+
+        <p><strong>Your decisions will affect:</strong></p>
+
+        <div class="stats">
+
+            <div class="stat">
+                <img src="icon1.png" alt="sustainability icon" width="50px">
+                <strong>Sustainability</strong>
+            </div>
+
+            <div class="stat">
+                <img src="icon2.png" alt="happiness icon" width="45px">
+                <strong>Happiness</strong>
+            </div>
+
+            <div class="stat">
+                <img src="icon3.png" alt="budget icon" width="70px">
+                <strong>Budget</strong>
+            </div>
+
+        </div>
+
+        <p>
+            Every choice comes with a trade-off.
+            Some will bring immediate profit and growth,
+            while others may sacrifice short-term gains for long-term wellbeing.
+        </p>
+
+        <p>
+            <strong>Will you continue the cycle that built this city... or begin to break it?</strong>
+        </p>
+
+        <button id="beginBtn">Begin Your Term</button>
+
+    </div>
+
+</div>
+
+<div id="gameScreen">
+
+    <div class="game">
+
+        <div class="stats">
+
+            <div class="stat">
+                Sustainability:
+                <strong id="sustainability">50</strong>
+            </div>
+
+            <div class="stat">
+                Happiness:
+                <strong id="happiness">50</strong>
+            </div>
+
+            <div class="stat">
+                Budget:
+                <strong id="budget">50</strong>
+            </div>
+
+        </div>
+
+        <h2 id="speaker"></h2>
+
+        <img
+            id="portrait"
+            src="maya.png"
+            alt="character">
+
+        <p id="dialogue"></p>
+        <p id="situation"></p>
+
+        <button id="choiceA"></button>
+        <button id="choiceB"></button>
+
+        <div id="ending" class="hidden"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
