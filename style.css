@@ -26,11 +26,13 @@ body{
 .card,
 .game{
 
-    width:800px;
+    width: 900px;
+
+    margin: 2 2rem;
 
     background:rgba(255, 171, 171, 0.95);
 
-    padding:2rem;
+    padding: 2rem;
 
     border-radius:20px;
 
